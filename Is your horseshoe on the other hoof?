@@ -1,0 +1,4 @@
+s = list(map(int, input().split()))
+u = len(set(s))
+buy = 4 - u
+print(buy)
