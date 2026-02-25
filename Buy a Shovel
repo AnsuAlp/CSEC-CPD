@@ -1,0 +1,10 @@
+k, r = map(int, input().split())
+n = 1
+while True:
+    l = (n * k) % 10
+    
+    if l == 0 or l == r:
+        print(n)
+        break
+    
+    n += 1
