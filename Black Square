@@ -1,0 +1,10 @@
+a= list(map(int, input().split()))
+
+s = input().strip()
+
+t= 0
+for c in s:
+    i= int(c) - 1
+    t+= a[i]
+
+print(t)
