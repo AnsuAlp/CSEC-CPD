@@ -1,0 +1,23 @@
+n = int(input())
+a = list(map(int, input().split()))
+l = 0
+r = n - 1
+sereja = 0
+dima = 0
+t= 0   
+while l <= r:
+    if a[l] > a[r]:
+        b = a[l]
+        l += 1
+    else:
+        b= a[r]
+        r -= 1
+
+    if t == 0:
+        sereja += b
+    else:
+        dima += b
+
+    t= 1 - t 
+
+print(sereja, dima)
