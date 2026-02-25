@@ -1,0 +1,7 @@
+import math
+y, w = map(int, input().split())
+m = max(y, w)
+a = 6 - m + 1
+b = 6
+c= math.gcd(a, b)
+print(f"{a//c}/{b//c}")
