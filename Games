@@ -1,0 +1,17 @@
+n = int(input())
+t = []
+
+for i in range(n):
+    h, a = map(int, input().split())
+    t.append((h, a))
+
+count = 0
+
+for i in range(n):        
+    for j in range(n):    
+        if i == j:
+            continue
+        if t[i][0] == t[j][1]:  
+            count += 1
+
+print(count)
