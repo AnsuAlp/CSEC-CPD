@@ -1,0 +1,20 @@
+s = input().strip()
+
+l= "abcdefghijklmnopqrstuvwxyz"
+
+c= 'a'
+t= 0
+
+for i in s:
+    b = l.index(c)
+    d = l.index(i)
+    
+    
+    clockwise = (d - b) % 26
+    counterclockwise = (b - d) % 26
+    
+    t+= min(clockwise, counterclockwise)
+    
+    
+    c= i
+print(t)
